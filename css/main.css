@@ -1,0 +1,177 @@
+/* Style Guide */
+/*  Colors: Green #006633 (rgb (0, 102, 51))
+            Gold  #CCCC00 (rgb (204, 204, 0))
+    Fonts:  Montserrat */
+
+/* Global Styles */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+section:not(#landingSection)  {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.button {
+  /* Reset Defaults */
+  border: none;
+  padding: 0;
+  /* Apply Styles */
+  font-size: 2rem;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  background-color: #006633;
+  border-radius: 8px;
+  padding: 10px;
+  color: white;
+}
+
+ul.horizontalList {
+  list-style-type: none;
+  float: right;
+  margin-top: 3%;
+  margin-right: 12%;
+}
+
+ul.horizontalList li {
+  display: inline-block;
+  text-align: right;
+  padding: 0px 25px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+section {
+  padding-top: 10%;
+}
+
+.active-section {
+  color: #CCCC00 !important;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #CCCC00;
+}
+
+.sectionTitle {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* Landing Section Styles */
+
+#landingSection {
+  height: 100%;
+  width: 100%;
+  background: url('../img/portal-building-lightest.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+}
+
+#dap {
+  position: absolute;
+  z-index: 0;
+  width: 100px;
+  top: 10px;
+  left: 40px;
+}
+
+#landingLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -5%;
+}
+
+#registerButton {
+  margin-right: 30px;
+}
+
+#sponsorButton {
+  margin-left: 30px;
+}
+
+/* Navigation Styles */
+
+.navbar-fixed {
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+
+#navHackLogo {
+  width: 25%;
+  margin-left: 10%;
+  margin-top: 1%;
+}
+
+/* Sponsor Style */
+
+#sponsorSection {
+  padding-bottom: 10%;
+}
+
+/* Footer Styles */
+
+footer {
+  background-color: #006633;
+  width: 100%;
+  overflow: hidden;
+  clear: both;
+  padding-bottom: 20px;
+}
+
+footer p:first-of-type,
+footer p:last-of-type {
+  margin: 0;
+}
+
+footer .column {
+  float: left;
+  color: white;
+  margin-top: 20px;
+  padding: 10px;
+  border-left: 2px solid white;
+}
+
+footer .firstColumn {
+  margin-left: 10%;
+}
+
+footer .secondColumn {
+  margin-left: 25%;
+}
+
+footer .thirdColumn {
+  margin-left: 15%;
+}
+
+footer a {
+  color: white;
+}
+
+#dapFooter {
+  width: 100px;
+}
