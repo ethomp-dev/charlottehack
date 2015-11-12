@@ -5,6 +5,7 @@
     <link href="img/favicon.png" rel="icon" type="image"/>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href="css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="css/animation.css" rel="stylesheet" type="text/css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   </head>
 
@@ -13,8 +14,8 @@
     <!-- Landing Section -->
     <section id="landingSection">
       <img id="landingLogo" src="img/logo-screen-v2.png" alt="Charlotte Hack"/>
-      <h2>January 22 at 5 pm until January 23 at 5 pm <br/><br/>Portal Building, UNC Charlotte</h2>
       <br/>
+      <h2>January 22 at 5 pm until January 23 at 5 pm <br/><br/>Portal Building, UNC Charlotte</h2>
       <br/>
       <br/>
       <input id="registerButton" class="button" type="button" value="Register"/>
@@ -24,10 +25,11 @@
 
     <!-- Navigation Section -->
     <nav id="navigation">
-      <img id="navHackLogo" src="img/logo-screen-v2.png" alt="Charlotte Hack"/>
+      <a href="#landingSection"><img id="navHackLogo" src="img/logo-screen-v2.png" alt="Charlotte Hack"/></a>
       <ul class="horizontalList">
         <li><a id="about-nav" href="#aboutSection">About</a></li>
-        <li><a id="learn-nav" href="#learnSection">Learn</a></li>
+        <li><a id="tracks-nav" href="#tracksSection">Tracks</a></li>
+        <li><a id="perks-nav" href="#perksSection">Perks</a></li>
         <li><a id="register-nav" href="#registerSection">Register</a></li>
         <li><a id="sponsor-nav" href="#sponsorSection">Sponsor</a></li>
       </ul>
@@ -37,90 +39,110 @@
     <!-- About Section -->
     <section id="aboutSection">
       <h1 class="sectionTitle">About Charlotte Hack</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum commodo dui nec feugiat.
-        Nam mauris massa, rhoncus in leo non, feugiat gravida odio. Suspendisse luctus pretium neque suscipit
-        vestibulum. Ut maximus justo orci, sit amet ultricies sem molestie ut. Integer id massa dui. Duis
-        placerat elit in mi feugiat, nec fermentum dolor dignissim. Nullam tempus aliquet velit, eget commodo
-        justo tincidunt vitae. Duis finibus lacus leo, vel ullamcorper lacus tempus id. Nulla facilisi.
-        Mauris non porttitor nisl.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum commodo dui nec feugiat.
-        Nam mauris massa, rhoncus in leo non, feugiat gravida odio. Suspendisse luctus pretium neque suscipit
-        vestibulum. Ut maximus justo orci, sit amet ultricies sem molestie ut. Integer id massa dui. Duis
-        placerat elit in mi feugiat, nec fermentum dolor dignissim. Nullam tempus aliquet velit, eget commodo
-        justo tincidunt vitae. Duis finibus lacus leo, vel ullamcorper lacus tempus id. Nulla facilisi.
-        Mauris non porttitor nisl.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum commodo dui nec feugiat.
-        Nam mauris massa, rhoncus in leo non, feugiat gravida odio. Suspendisse luctus pretium neque suscipit
-        vestibulum. Ut maximus justo orci, sit amet ultricies sem molestie ut. Integer id massa dui. Duis
-        placerat elit in mi feugiat, nec fermentum dolor dignissim. Nullam tempus aliquet velit, eget commodo
-        justo tincidunt vitae. Duis finibus lacus leo, vel ullamcorper lacus tempus id. Nulla facilisi.
-        Mauris non porttitor nisl.</p>
+      <p>In the context of a hackathon, the word "hack" is used to describe how multiple technologies can be
+        used together in a new and innovative way. Teams of up to four people spend the weekend working on
+        innovative software and hardware solutions to real-world problems. These projects range in platform
+        and application, including elements of web development, mobile applications, drones, and more. However,
+        many times the most important aspect of a hackathon is the community it generates and skills that
+        inexperienced hackers walk away with.</p>
+      <p>In the City of Charlotte where banking, healthcare, energy, and retails meet, a hackathon provide an
+        excellent venue to bring hackers, designers, developers, leaders, and sponsors together. We aim to bring
+        together innovative students to solve problems and find a fresh perspective to improve the current state
+        of the technology. We hope  everyone should be able to participate, to combine the skill sets of thinkers,
+         developers, and entrepreneurs among our student community to create many more ideas by working together
+         in a short bust of time. To help facilitate the learning experience, we've compiled a number of resources
+         to help during the weekend. There will be a number of tutorials on tools to get you started. In addition,
+         we'll be offering a series of tech talks throughout the event.</p>
     </section>
     <!-- End About Section -->
 
-    <!-- Learn Section -->
-    <section id="learnSection">
+    <!-- Tracks Section -->
+    <section id="tracksSection">
       <h1 class="sectionTitle">Tracks</h1>
-      <div>
-        <figure style="display:inline-block;margin:0;padding:0;width:30%;padding-right:4%;vertical-align:top">
-          <img src="img/health.png" alt="Health Care" style="max-width:100%;"/>
+      <div class="scale-down">
+        <figure>
+          <img class="icon" src="img/health.png" alt="Health Care"/>
           <figcaption>
-            <h3 style="text-align:center">Health Care</h3>
+            <h3>Health Care</h3>
             <p>Using an API from the health care industry, you will solve a particular problem.</p>
           </figcaption>
         </figure>
-        <figure style="display:inline-block;margin:0;padding:0;width:30%;padding-right:4%;vertical-align:top">
-          <img src="img/retail.png" alt="Retail" style="max-width:100%;"/>
+        <figure>
+          <img class="icon" src="img/retail.png" alt="Retail"/>
           <figcaption>
-            <h3 style="text-align:center">Retail</h3>
+            <h3>Retail</h3>
             <p>Using an API from the retail industry, you will solve a particular problem.</p>
           </figcaption>
         </figure>
-        <figure style="display:inline-block;margin:0;padding:0;width:30%;vertical-align:top">
-          <img src="img/finance.png" alt="Finance" style="max-width:100%;"/>
+        <figure>
+          <img class="icon" src="img/finance.png" alt="Finance"/>
           <figcaption>
-            <h3 style="text-align:center">Finance</h3>
-            <p>Using an API from the banking industry, you will solve a particular problem.</p>
-          </figcaption>
-        </figure>
-      </div>
-      <h1 class="sectionTitle">Perks</h1>
-      <div>
-        <figure style="display:inline-block;margin:0;padding:0;width:30%;padding-right:4%;vertical-align:top">
-          <img src="img/shirt.png" alt="Free Shirt" style="max-width:100%;"/>
-          <figcaption>
-            <h3 style="text-align:center">Free T-Shirt</h3>
-            <p>Each member of your team will receive a customizable t-shirt when you arrive to the event.</p>
-          </figcaption>
-        </figure>
-        <figure style="display:inline-block;margin:0;padding:0;width:30%;padding-right:4%;vertical-align:top">
-          <img src="img/food.png" alt="Retail" style="max-width:100%;"/>
-          <figcaption>
-            <h3 style="text-align:center">Free Food and Snacks</h3>
-            <p>Food and Drinks will be provided throughout the entire event.</p>
-          </figcaption>
-        </figure>
-        <figure style="display:inline-block;margin:0;padding:0;width:30%;vertical-align:top">
-          <img src="img/cash.png" alt="Cash Prizes" style="max-width:100%;"/>
-          <figcaption>
-            <h3 style="text-align:center">Cash Prizes</h3>
+            <h3>Finance</h3>
             <p>Using an API from the banking industry, you will solve a particular problem.</p>
           </figcaption>
         </figure>
       </div>
     </section>
-    <!-- End Learn Section -->
+    <!-- End Tracks Section -->
+
+    <!-- Perks Section -->
+    <section id="perksSection">
+      <h1 class="sectionTitle">Perks</h1>
+      <div class="translate-up">
+        <figure>
+          <img class="icon" src="img/shirt-white.png" alt="Free Shirt"/>
+          <figcaption>
+            <h3>Free T-Shirt</h3>
+            <p>Each member of your team will receive a customizable t-shirt when you arrive to the event.</p>
+          </figcaption>
+        </figure>
+        <figure style="background-color:#2dbcfc;">
+          <img class="icon" src="img/food-white.png" alt="Retail"/>
+          <figcaption>
+            <h3>Free Food/Drink</h3>
+            <p>Food and Drinks will be provided throughout the entire event.</p>
+          </figcaption>
+        </figure>
+        <figure style="background-color:#00994D;">
+          <img class="icon" src="img/cash-white.png" alt="Cash Prizes"/>
+          <figcaption>
+            <h3>Cash Prizes</h3>
+            <p>Win up to $500!</p>
+          </figcaption>
+        </figure>
+        <figure style="background-color:#03A9F4;">
+          <img class="icon" src="img/ribbon-white.png" alt="Awards"/>
+          <figcaption>
+            <h3>Awards</h3>
+            <p>Category Winners<br/>
+               Best Design<br/>
+               Best i0S Application<br/>
+               Best Android Application<br/>
+               Best Web Application<br/>
+               Sponsor Favorite</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    <!-- End Perks Section -->
 
     <!-- Register Section -->
     <section id="registerSection" style="clear:both;">
       <h1 class="sectionTitle">Register</h1>
-      <form>
-        <label>Student ID</label><br/>
-        <input type="text"/><br/>
-        <label>Student Email</label><br/>
-        <input type="email"/><br/>
-        <input type="button" value="Register"/>
-      </form>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum commodo dui nec feugiat.
+        Nam mauris massa, rhoncus in leo non, feugiat gravida odio. Suspendisse luctus pretium neque suscipit
+        vestibulum. Ut maximus justo orci, sit amet ultricies sem molestie ut. Integer id massa dui. Duis
+        placerat elit in mi feugiat, nec fermentum dolor dignissim. Nullam tempus aliquet velit, eget commodo
+        justo tincidunt vitae. Duis finibus lacus leo, vel ullamcorper lacus tempus id. Nulla facilisi.
+        Mauris non porttitor nisl.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum commodo dui nec feugiat.
+        Nam mauris massa, rhoncus in leo non, feugiat gravida odio. Suspendisse luctus pretium neque suscipit
+        vestibulum. Ut maximus justo orci, sit amet ultricies sem molestie ut. Integer id massa dui. Duis
+        placerat elit in mi feugiat, nec fermentum dolor dignissim. Nullam tempus aliquet velit, eget commodo
+        justo tincidunt vitae. Duis finibus lacus leo, vel ullamcorper lacus tempus id. Nulla facilisi.
+        Mauris non porttitor nisl.</p>
+      <h1 style="text-align:center;">Registration closes on January 1, 2016.</h1>
+      <input style="display:block;margin-left:auto;margin-right:auto;" class="button" type="button" value="Sign Me Up!"/>
     </section>
     <!-- End Register Section -->
 
@@ -152,7 +174,8 @@
     <footer>
       <div class="firstColumn column">
         <p><a href="#aboutSection">About</a></p>
-        <p><a href="#learnSection">Learn</a></p>
+        <p><a href="#tracksSection">Tracks</a></p>
+        <p><a href="#perksSection">Perks</a></p>
         <p><a href="#registerSection">Register</a></p>
         <p><a href="#sponsorSection">Sponsor</a></p>
       </div>
@@ -160,7 +183,7 @@
         <p>&copy; 2015 charlotteHACK</p>
         <p><a href="mailto:contact@uncc.edu">contact@uncc.edu</a></p>
         <p>Hosted by CCI Dean's Ambassadors</p>
-        <img id="dapFooter" src="img/dap-logo-low.png" alt="CCI Dean's Ambassadors"/>
+        <p><img id="dapFooter" src="img/dap-logo-low.png" alt="CCI Dean's Ambassadors"/></p>
       </div>
       <div class="thirdColumn column">
         <p><a href="#">Facebook</a></p>
@@ -172,29 +195,36 @@
 
     <script>
       $(document).ready(function() {
+        // Function to create sticky navbar
         $(window).scroll(function () {
-          if ($(window).scrollTop() > 654) {
+          if ($(window).scrollTop() > $('#landingSection').height()) {
             $('#navigation').addClass('navbar-fixed');
           }
-          if ($(window).scrollTop() < 655) {
+          if ($(window).scrollTop() < $('#landingSection').height()) {
             $('#navigation').removeClass('navbar-fixed');
           }
 
           // Change color of navigational elements when their content is in view (active)
-          var a = $('#landingSection').height();
-          var l = a + $('#aboutSection').outerHeight();
-          var r = l + $('#learnSection').outerHeight();
-          var s = r + $('#registerSection').outerHeight();
+          var a = $('#landingSection').height();            // distance of "about section" from top of document
+          var t = a + $('#aboutSection').outerHeight();     // distance of "tracks section" from top of document
+          var p = t + $('#tracksSection').outerHeight();    // distance of "perks section" from top of document
+          var r = p + $('#perksSection').outerHeight();     // distance of "registration section" from top of document
+          var s = r + $('#registerSection').outerHeight();  // distance of "sponsor section" from top of document
 
-          if ($(window).scrollTop() >= a && $(window).scrollTop() < l) {
+          if ($(window).scrollTop() >= a && $(window).scrollTop() < t) {
             $('#about-nav').addClass('active-section');
           } else {
             $('#about-nav').removeClass('active-section');
           }
-          if ($(window).scrollTop() >= l && $(window).scrollTop() < r) {
-            $('#learn-nav').addClass('active-section');
+          if ($(window).scrollTop() >= t && $(window).scrollTop() < p) {
+            $('#tracks-nav').addClass('active-section');
           } else {
-            $('#learn-nav').removeClass('active-section');
+            $('#tracks-nav').removeClass('active-section');
+          }
+          if ($(window).scrollTop() >= p && $(window).scrollTop() < r) {
+            $('#perks-nav').addClass('active-section');
+          } else {
+            $('#perks-nav').removeClass('active-section');
           }
           if ($(window).scrollTop() >= r && $(window).scrollTop() < s) {
             $('#register-nav').addClass('active-section');
@@ -209,6 +239,21 @@
         });
       });
 
+      // Function to ease through the page during navigation
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+          || location.hostname == this.hostname) {
+
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+                scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
     </script>
   </body>
 </html>
