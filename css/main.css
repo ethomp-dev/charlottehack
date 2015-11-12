@@ -19,7 +19,7 @@ section:not(#landingSection)  {
 
 .button {
   /* Reset Defaults */
-  border: none;
+  border: 3px solid #006633;
   padding: 0;
   /* Apply Styles */
   font-size: 2rem;
@@ -61,6 +61,17 @@ a {
 
 a:hover {
   color: #CCCC00;
+}
+
+input[type="button"]:focus {
+  border: none;
+  outline: none;
+}
+
+input[type=button]:hover {
+  border: 3px solid #006633;
+  color: black;
+  background-color: transparent;
 }
 
 .sectionTitle {
