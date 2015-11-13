@@ -12,11 +12,12 @@ html, body {
   font-family: 'Montserrat', sans-serif;
 }
 
-section {
-  padding-top: 10%;
+section:not(#landingSection):not(#sponsorLogoSection) {
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
-section:not(#landingSection):not(#sponsorLogoSection) {
+section:not(#landingSection):not(#sponsorLogoSection)  {
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -30,6 +31,7 @@ section:not(#landingSection):not(#sponsorLogoSection) {
   text-align: center;
   font-size: 2rem;
 }
+
 
 .button {
   /* Reset Defaults */
@@ -97,12 +99,57 @@ a:hover {
   color: #FFCC00;
 }
 
+div#divider-one {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  background: url('../img/sample1.jpg');
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  background-attachment: fixed;
+}
+
+div#divider-two {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  background: url('../img/sample2.jpg');
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  background-attachment: fixed;
+}
+
+div#divider-three {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  background: url('../img/sample3.jpg');
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  background-attachment: fixed;
+}
+
+div#divider-four {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  background: url('../img/sample4.jpg');
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  background-attachment: fixed;
+}
+
 /* Landing Section Styles */
 
 #landingSection {
   height: 100%;
   width: 100%;
-  background: url('../img/portal-building-lightest.png');
+  padding-top: 10%;
+  background: url('../img/portal-building-lighter.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   display: block;
@@ -236,6 +283,7 @@ a:hover {
   color: white;
   width: 100%;
   padding-bottom: 10%;
+  padding-top: 2%;
 }
 
 .allyLogo {
