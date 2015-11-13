@@ -214,6 +214,7 @@
 
     <script>
       $(document).ready(function() {
+
         // Function to create sticky navbar
         $(window).scroll(function () {
           if ($(window).scrollTop() > $('#landingSection').height()) {
@@ -266,9 +267,15 @@
           var target = $(this.hash);
           target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
           if (target.length) {
-            $('html,body').animate({
-                scrollTop: target.offset().top
-            }, 1000);
+            if ($(window).scrollTop() < $('#landingSection').height()) {
+              $('html,body').animate({
+                  scrollTop: target.offset().top - $('#navigation').outerHeight()
+              }, 1000);
+            } else {
+              $('html,body').animate({
+                  scrollTop: target.offset().top
+              }, 1000);
+            }
             return false;
           }
         }
