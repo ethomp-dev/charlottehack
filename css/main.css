@@ -61,7 +61,7 @@ input[type="button"]:focus {
 }
 
 input[type=button]:hover {
-  background-color: transparent !important;
+  background-color: white !important;
   transition: transform ease-out 0.2s, background 0.3s;
 }
 
@@ -148,8 +148,9 @@ div#divider-four {
 #landingSection {
   height: 100%;
   width: 100%;
-  padding-top: 10%;
-  background: url('../img/portal-building-lighter.png');
+  padding-top: 2%;
+  background: url('../img/portal-building.png');
+  background-color: white;
   background-repeat: no-repeat;
   background-attachment: fixed;
   display: block;
@@ -161,6 +162,18 @@ div#divider-four {
   -o-background-size: cover;
   background-size: cover;
   text-align: center;
+}
+
+#landingSection h2 {
+  background-color: white;
+  color: #006633;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(50,50,50,.5);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(50,50,50,.5);
+  box-shadow: 5px 5px 5px 0px rgba(50,50,50,.5);
 }
 
 #dap {
@@ -175,15 +188,23 @@ div#divider-four {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -7%;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(50,50,50,.5);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(50,50,50,.5);
+  box-shadow: 5px 5px 5px 0px rgba(50,50,50,.5);
 }
 
 #landingSection .registerButton {
   margin-right: 30px;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(50,50,50,.5);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(50,50,50,.5);
+  box-shadow: 5px 5px 5px 0px rgba(50,50,50,.5);
 }
 
 #landingSection .sponsorButton {
   margin-left: 30px;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(50,50,50,.5);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(50,50,50,.5);
+  box-shadow: 5px 5px 5px 0px rgba(50,50,50,.5);
 }
 
 /* Navigation Styles */
