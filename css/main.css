@@ -61,7 +61,7 @@ input[type="button"]:focus {
 }
 
 input[type=button]:hover {
-  background-color: white !important;
+  background-color: white;
   transition: transform ease-out 0.2s, background 0.3s;
 }
 
@@ -103,7 +103,7 @@ div#divider-one {
   width: 100%;
   height: 50%;
   overflow: hidden;
-  background: url('../img/sample1.jpg');
+  background: url('../img/min/sample1.jpg');
   background-size: cover;
   background-position: top;
   position: relative;
@@ -114,7 +114,7 @@ div#divider-two {
   width: 100%;
   height: 50%;
   overflow: hidden;
-  background: url('../img/sample2.jpg');
+  background: url('../img/min/sample2.jpg');
   background-size: cover;
   background-position: top;
   position: relative;
@@ -125,7 +125,7 @@ div#divider-three {
   width: 100%;
   height: 50%;
   overflow: hidden;
-  background: url('../img/sample3.jpg');
+  background: url('../img/min/sample3.jpg');
   background-size: cover;
   background-position: top;
   position: relative;
@@ -136,7 +136,7 @@ div#divider-four {
   width: 100%;
   height: 50%;
   overflow: hidden;
-  background: url('../img/sample4.jpg');
+  background: url('../img/min/sample4.jpg');
   background-size: cover;
   background-position: top;
   position: relative;
@@ -149,7 +149,7 @@ div#divider-four {
   height: 100%;
   width: 100%;
   padding-top: 2%;
-  background: url('../img/portal-building.png');
+  background: url('../img/min/portal-building.png');
   background-color: white;
   background-repeat: no-repeat;
   background-attachment: fixed;
