@@ -233,11 +233,11 @@
           }
 
           // Change color of navigational elements when their content is in view (active)
-          var a = $('#landingSection').height();            // distance of "about section" from top of document
-          var t = a + $('#aboutSection').outerHeight();     // distance of "tracks section" from top of document
-          var p = t + $('#tracksSection').outerHeight();    // distance of "perks section" from top of document
-          var r = p + $('#perksSection').outerHeight();     // distance of "registration section" from top of document
-          var s = r + $('#registerSection').outerHeight();  // distance of "sponsor section" from top of document
+          var a = $('#landingSection').height();                                              // distance of "about section" from top of document
+          var t = a + $('#aboutSection').outerHeight() + $('#divider-one').outerHeight();     // distance of "tracks section" from top of document
+          var p = t + $('#tracksSection').outerHeight() + $('#divider-two').outerHeight();    // distance of "perks section" from top of document
+          var r = p + $('#perksSection').outerHeight() + $('#divider-three').outerHeight();   // distance of "registration section" from top of document
+          var s = r + $('#registerSection').outerHeight() + $('#divider-four').outerHeight(); // distance of "sponsor section" from top of document
 
           if ($(window).scrollTop() >= a && $(window).scrollTop() < t) {
             $('#about-nav').addClass('active-section');
@@ -282,7 +282,7 @@
             } else {
               $('html,body').animate({
                   scrollTop: target.offset().top
-              }, 1000);
+              }, 1100);
             }
             return false;
           }
