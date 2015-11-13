@@ -1,6 +1,6 @@
 /* Style Guide */
 /*  Colors: Green #006633 (rgb (0, 102, 51))
-            Gold  #CCCC00 (rgb (204, 204, 0))
+            Gold  #FFCC00 (rgb (204, 204, 0))
     Fonts:  Montserrat */
 
 /* Global Styles */
@@ -12,23 +12,65 @@ html, body {
   font-family: 'Montserrat', sans-serif;
 }
 
-section:not(#landingSection)  {
+section {
+  padding-top: 10%;
+}
+
+section:not(#landingSection):not(#sponsorLogoSection) {
   margin-left: 10%;
   margin-right: 10%;
 }
 
+.active-section {
+  color: #FFCC00 !important;
+}
+
+.sectionTitle {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+}
+
 .button {
   /* Reset Defaults */
-  border: 3px solid #006633;
   padding: 0;
   /* Apply Styles */
   font-size: 2rem;
   font-family: 'Montserrat';
   text-transform: uppercase;
-  background-color: #006633;
   border-radius: 8px;
   padding: 10px;
   color: white;
+}
+
+.registerButton {
+  border: 3px solid #006633;
+  background-color: #006633;
+}
+
+.sponsorButton {
+  border: 3px solid #FFCC00;
+  background-color: #FFCC00;
+}
+
+input[type="button"]:focus {
+  border: none;
+  outline: none;
+}
+
+input[type=button]:hover {
+  background-color: transparent !important;
+  transition: transform ease-out 0.2s, background 0.3s;
+}
+
+.registerButton:hover {
+  border: 3px solid #006633;
+  color: #006633;
+}
+
+.sponsorButton:hover {
+  border: 3px solid #FFCC00;
+  color: #FFCC00;
 }
 
 ul.horizontalList {
@@ -46,38 +88,13 @@ ul.horizontalList li {
   font-size: 1.25rem;
 }
 
-section {
-  padding-top: 10%;
-}
-
-.active-section {
-  color: #CCCC00 !important;
-}
-
 a {
   text-decoration: none;
   color: black;
 }
 
 a:hover {
-  color: #CCCC00;
-}
-
-input[type="button"]:focus {
-  border: none;
-  outline: none;
-}
-
-input[type=button]:hover {
-  border: 3px solid #006633;
-  color: black;
-  background-color: transparent;
-}
-
-.sectionTitle {
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 2rem;
+  color: #FFCC00;
 }
 
 /* Landing Section Styles */
@@ -114,11 +131,11 @@ input[type=button]:hover {
   margin-top: -7%;
 }
 
-#registerButton {
+#landingSection .registerButton {
   margin-right: 30px;
 }
 
-#sponsorButton {
+#landingSection .sponsorButton {
   margin-left: 30px;
 }
 
@@ -196,9 +213,56 @@ input[type=button]:hover {
 
 /* Registration Styles */
 
+#registerSection {
+  clear: both;
+}
+
+#registerSection .registerButton {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* Sponsor Styles */
 
+#sponsorLogoSection {
+  background-color: #006633;
+  color: white;
+  width: 100%;
+  padding-bottom: 10%;
+}
+
+.allyLogo {
+  height: 300px;
+  padding-left: 20px;
+  display: inline-block;
+}
+
+.allyLogo:first-child, .allyLogo:nth-child(4n) {
+  margin-left: 13%;
+}
+
+.collaboratorLogo {
+  height: 200px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  display: inline-block;
+}
+
+.collaboratorLogo:first-child, .collaboratorLogo:nth-child(5n) {
+  margin-left: 16%;
+}
+
+.advocateLogo {
+  height: 100px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  display: inline-block;
+}
+
+.advocateLogo:first-child, .advocateLogo:nth-child(8n) {
+  margin-left: 17%;
+}
 
 /* Footer Styles */
 
