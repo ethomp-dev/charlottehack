@@ -239,13 +239,13 @@ a:hover {
 }
 
 .allyLogo {
-  height: 300px;
+  height: 325px;
   padding-left: 20px;
   display: inline-block;
 }
 
-.allyLogo:first-of-type, .allyLogo:nth-child(5n) {
-  margin-left: 13%;
+.allyLogo:first-of-type, .allyLogo:nth-child(4n) {
+  margin-left: 23.5%;
 }
 
 .collaboratorLogo {
@@ -256,18 +256,18 @@ a:hover {
 }
 
 .collaboratorLogo:first-of-type, .collaboratorLogo:nth-child(6n) {
-  margin-left: 16%;
+  margin-left: 16.25%;
 }
 
 .advocateLogo {
-  height: 100px;
+  height: 150px;
   padding-left: 20px;
   padding-bottom: 20px;
   display: inline-block;
 }
 
-.advocateLogo:first-of-type, .advocateLogo:nth-child(9n) {
-  margin-left: 17%;
+.advocateLogo:first-of-type, .advocateLogo:nth-child(7n) {
+  margin-left: 17.5%;
 }
 
 /* Footer Styles */
