@@ -225,6 +225,12 @@ a:hover {
 
 /* Sponsor Styles */
 
+#sponsorSection .sponsorButton {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #sponsorLogoSection {
   background-color: #006633;
   color: white;
@@ -238,7 +244,7 @@ a:hover {
   display: inline-block;
 }
 
-.allyLogo:first-child, .allyLogo:nth-child(4n) {
+.allyLogo:first-of-type, .allyLogo:nth-child(5n) {
   margin-left: 13%;
 }
 
@@ -249,7 +255,7 @@ a:hover {
   display: inline-block;
 }
 
-.collaboratorLogo:first-child, .collaboratorLogo:nth-child(5n) {
+.collaboratorLogo:first-of-type, .collaboratorLogo:nth-child(6n) {
   margin-left: 16%;
 }
 
@@ -260,7 +266,7 @@ a:hover {
   display: inline-block;
 }
 
-.advocateLogo:first-child, .advocateLogo:nth-child(8n) {
+.advocateLogo:first-of-type, .advocateLogo:nth-child(9n) {
   margin-left: 17%;
 }
 
